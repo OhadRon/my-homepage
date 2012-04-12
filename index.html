@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+
+	<title>Ohad Ron</title>
+	<style type="text/css">
+		body{
+			background-color: #eeeeee;
+			color: #333;
+			font-family: 'Chivo', Arial, sans-serif;
+			font-size: 18px;
+
+		}
+
+		#main{
+			margin: 0 auto;
+			width: 900px;
+			background-color: #e7e7e7;
+			line-height: 200%;
+			margin-top: 20px;
+			border: 5px solid #e5e5e5;
+
+		}
+
+		a {
+			color: #000;
+			background-color: #daebca;
+			text-decoration: none;
+			opacity: 0.6;
+		}
+
+		a:hover{
+			text-decoration: none;
+		}
+
+		h1{
+			display: inline;
+			font-size: 24px;
+		}
+
+		#art{
+			background-color: #ccc;
+			width: 100%;
+			height: 300px;
+		}
+
+		#text{
+			padding: 30px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="main">
+		<canvas id="art" width="900" height="300">something</canvas>
+		<div id="text">
+			<p><h1>Ohad Ron</h1>
+			<br>Tel Aviv, Israel
+			<br> <a href="http://nastypanda.com">Music blog</a> (Hebrew) // <a href="http://facebook.com/ohad.ron">Facebook</a> // <a href="http://twitter.com/ohadisohad">Twitter</a> // <a href="http://github.com/OhadRon">GitHub</a> // <a href="http://il.linkedin.com/pub/ohad-ron/42/b62/388">LinkedIn</a> <br />// Mail: ohdron ~ gmail.com // +972-54-7523255
+		</div>
+
+		</p>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("a").hover(
+				function(){
+					$(this).fadeTo(70,1);
+				},
+				function(){
+					$(this).fadeTo(150,0.6);
+				});
+
+
+
+		});
+
+
+	</script>
+</body>
+</html>
+
